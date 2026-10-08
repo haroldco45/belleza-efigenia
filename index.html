@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Belleza Efigenia</title>
+<meta name="description" content="Efigenia Martínez — productos de belleza Natura, Avon y Yanbal en Miranda, Cauca. Pedidos por WhatsApp 314 693 5675.">
+<meta name="theme-color" content="#d81b72">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta property="og:title" content="Efigenia Martínez · Productos de Belleza">
+<meta property="og:description" content="Natura · Avon · Yanbal en Miranda, Cauca. Pide por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--rosa:#d81b72;--rosa-suave:#fde7f0;--crema:#fff8f4;--tinta:#1f1420;--gris:#6b5a66;--linea:#f1d6e2;--verde:#1fae5b;
+  --natura:#f47a20;--avon:#e5007e;--yanbal:#1f1f1f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+
+.top{position:sticky;top:0;z-index:20;background:rgba(255,248,244,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.marca{font-family:Fraunces,serif;font-weight:800;font-size:1.15rem}
+.marca span{color:var(--rosa)}
+.nav{display:flex;gap:18px;font-size:.92rem;font-weight:500}
+.nav a{text-decoration:none;color:var(--gris)}
+.nav a:hover{color:var(--rosa)}
+.btn-wa-top{background:var(--verde);color:#fff;text-decoration:none;padding:9px 14px;border-radius:999px;font-weight:600;font-size:.88rem}
+@media(max-width:760px){.nav{display:none}}
+
+/* HERO: vitrina de productos */
+.hero{background:radial-gradient(120% 90% at 80% 20%,#ffd9e8 0%,#fff1f6 45%,var(--crema) 80%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:24px;min-height:calc(88vh - 60px);padding-top:32px;padding-bottom:40px}
+.eyebrow{display:inline-block;background:var(--rosa);color:#fff;padding:6px 12px;border-radius:999px;font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-family:Fraunces,serif;font-weight:800;font-size:clamp(2.4rem,6.4vw,4.4rem);line-height:1.02;margin:16px 0 14px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--rosa)}
+.hero p{font-size:clamp(1rem,2.2vw,1.15rem);color:var(--gris);max-width:520px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:600 1rem Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:var(--verde);color:#fff}
+.btn-claro{background:#fff;color:var(--tinta);border:1px solid var(--linea)}
+.btn-rosa{background:var(--rosa);color:#fff}
+.vitrina{position:relative;aspect-ratio:1/1;max-width:560px;width:100%;justify-self:center}
+.vitrina .p{position:absolute;background:#fff;border-radius:26px;box-shadow:0 24px 60px rgba(216,27,114,.18);overflow:hidden;animation:flota 6s ease-in-out infinite}
+.vitrina .p img{width:100%;height:100%;object-fit:contain;padding:8%}
+.vitrina .p1{width:56%;height:56%;left:22%;top:18%;z-index:3}
+.vitrina .p2{width:36%;height:36%;left:0;top:2%;animation-delay:-2s}
+.vitrina .p3{width:36%;height:36%;right:0;top:4%;animation-delay:-4s}
+.vitrina .p4{width:34%;height:34%;left:2%;bottom:2%;animation-delay:-1s}
+.vitrina .p5{width:34%;height:34%;right:2%;bottom:0;animation-delay:-3s}
+.vitrina .tag{position:absolute;left:10px;top:10px;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:4px 8px;border-radius:999px}
+@keyframes flota{50%{transform:translateY(-8px)}}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr;min-height:auto}.vitrina{max-width:420px}}
+
+.marcas{background:var(--tinta);color:#fff}
+.marcas .wrap{display:grid;grid-template-columns:repeat(3,1fr);text-align:center}
+.marcas a{padding:22px 8px;font-family:Fraunces,serif;font-size:clamp(1.1rem,3vw,1.6rem);font-weight:600;border-right:1px solid rgba(255,255,255,.12);color:#fff;text-decoration:none}
+.marcas a:last-child{border:0}
+.marcas small{display:block;font-family:Inter;font-size:.68rem;opacity:.6;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+
+section{padding:64px 0}
+.titulo{font-family:Fraunces,serif;font-weight:800;font-size:clamp(1.8rem,4.5vw,2.8rem);letter-spacing:-.02em;line-height:1.1}
+.sub{color:var(--gris);margin-top:10px;max-width:640px}
+
+/* filtros */
+.filtros{position:sticky;top:60px;z-index:10;background:var(--crema);padding:14px 0 10px;margin-top:18px}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+.chips::-webkit-scrollbar{display:none}
+.chips+.chips{margin-top:8px}
+.chip{flex:0 0 auto;border:1px solid var(--linea);background:#fff;padding:8px 15px;border-radius:999px;font:500 .9rem Inter;cursor:pointer;color:var(--tinta)}
+.chip.on{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.chip.m.on[data-m=Natura]{background:var(--natura);border-color:var(--natura)}
+.chip.m.on[data-m=Avon]{background:var(--avon);border-color:var(--avon)}
+
+/* tarjetas de producto */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:14px}
+@media(max-width:480px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}}
+.prod{background:#fff;border:1px solid var(--linea);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.prod:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(216,27,114,.12)}
+.prod .foto{aspect-ratio:1/1;background:#fff;position:relative;cursor:zoom-in}
+.prod .foto img{width:100%;height:100%;object-fit:contain;padding:6%}
+.prod .foto .tag{position:absolute;left:10px;top:10px}
+.tag{font-size:.64rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:4px 8px;border-radius:999px}
+.tag.Natura{background:var(--natura)} .tag.Avon{background:var(--avon)} .tag.Yanbal{background:var(--yanbal)}
+.prod .info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1;border-top:1px solid var(--linea)}
+.prod .cat{font-size:.72rem;color:var(--gris);text-transform:uppercase;letter-spacing:.05em}
+.prod h3{font-size:.95rem;line-height:1.3;flex:1}
+.add{background:var(--tinta);color:#fff;border:0;padding:10px 12px;border-radius:999px;font:600 .85rem Inter;cursor:pointer;width:100%}
+.add.ok{background:var(--verde)}
+.mas{margin-top:22px;background:#fff;border:1px dashed var(--rosa);border-radius:20px;padding:20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.mas p{max-width:620px;color:var(--gris)}
+.mas b{color:var(--tinta)}
+
+/* visor */
+.visor{position:fixed;inset:0;z-index:50;background:rgba(31,20,32,.75);display:none;align-items:center;justify-content:center;padding:16px}
+.visor.on{display:flex}
+.visor .caja{background:#fff;border-radius:24px;max-width:460px;width:100%;overflow:hidden}
+.visor img{width:100%;aspect-ratio:1/1;object-fit:contain;padding:6%}
+.visor .t{padding:0 20px 20px;display:grid;gap:10px}
+.visor h3{font-size:1.1rem}
+.cerrar{position:absolute;top:16px;right:16px;background:#fff;border:0;border-radius:50%;width:40px;height:40px;font-size:1.3rem;cursor:pointer}
+
+/* real */
+.real .wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.real figure{border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(31,20,32,.15)}
+@media(max-width:760px){.real .wrap{grid-template-columns:1fr}}
+
+.pedido{background:var(--rosa-suave)}
+.form{background:#fff;border-radius:24px;padding:24px;margin-top:28px;display:grid;gap:14px;max-width:640px;border:1px solid var(--linea)}
+.form label{font-weight:600;font-size:.9rem}
+.form input,.form textarea,.form select{width:100%;margin-top:6px;border:1px solid var(--linea);border-radius:12px;padding:12px 14px;font:400 1rem Inter;background:var(--crema);color:var(--tinta)}
+.lista{display:flex;flex-wrap:wrap;gap:8px;min-height:24px}
+.lista span{background:var(--rosa-suave);color:var(--rosa);padding:6px 10px;border-radius:999px;font-size:.84rem;font-weight:600;display:inline-flex;gap:6px;align-items:center}
+.lista button{border:0;background:none;color:var(--rosa);cursor:pointer;font-size:1rem;line-height:1}
+.vacio{color:var(--gris);font-size:.9rem}
+.nota{font-size:.82rem;color:var(--gris)}
+
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px;counter-reset:p}
+.paso{background:#fff;border:1px solid var(--linea);border-radius:20px;padding:22px}
+.paso::before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--rosa);color:#fff;font-weight:700;margin-bottom:12px}
+.paso h3{font-size:1.05rem;margin-bottom:6px}
+.paso p{color:var(--gris);font-size:.92rem}
+
+.dato{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--linea)}
+.dato .i{font-size:1.4rem}
+.dato b{display:block}
+.dato a{color:var(--rosa);font-weight:600;text-decoration:none}
+
+footer{background:var(--tinta);color:rgba(255,255,255,.7);padding:32px 0 110px;font-size:.85rem;text-align:center}
+footer b{color:#fff}
+.flota{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;align-items:center;gap:10px;background:var(--verde);color:#fff;text-decoration:none;padding:14px 18px;border-radius:999px;font-weight:700;box-shadow:0 10px 30px rgba(31,174,91,.4)}
+.flota .n{background:#fff;color:var(--verde);border-radius:999px;min-width:24px;height:24px;display:grid;place-items:center;font-size:.8rem;padding:0 6px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--tinta);color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;transition:.25s;z-index:60;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="marca">Efigenia <span>Martínez</span></div>
+    <nav class="nav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#pedido">Hacer pedido</a>
+      <a href="#contacto">Dónde estoy</a>
+    </nav>
+    <a class="btn-wa-top" href="https://wa.me/573146935675?text=Hola%20Efigenia%2C%20quiero%20informaci%C3%B3n%20de%20los%20productos" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Miranda, Cauca</span>
+      <h1>Cuida de ti,<br><em>resalta tu belleza.</em></h1>
+      <p>Perfumes, maquillaje y cuidado personal de Natura, Avon y Yanbal. Escoge aquí, pide por WhatsApp y te asesoro personalmente.</p>
+      <div class="ctas">
+        <a class="btn btn-rosa" href="#catalogo">Ver productos</a>
+        <a class="btn btn-wa" href="#pedido">Hacer pedido</a>
+      </div>
+    </div>
+    <div class="vitrina" id="vitrina"></div>
+  </div>
+</section>
+
+<div class="marcas">
+  <div class="wrap">
+    <a href="#catalogo" data-ir="Natura">Natura<small>Bien estar bien</small></a>
+    <a href="#catalogo" data-ir="Avon">Avon<small>Brilla siempre</small></a>
+    <a href="#catalogo" data-ir="Yanbal">Yanbal<small>Belleza única</small></a>
+  </div>
+</div>
+
+<section id="catalogo">
+  <div class="wrap">
+    <h2 class="titulo">Catálogo</h2>
+    <p class="sub">Toca la foto para verla grande y <b>Agregar</b> para armar tu pedido. Precios y disponibilidad te los confirmo por WhatsApp según la campaña vigente.</p>
+    <div class="filtros">
+      <div class="chips" id="fMarca"></div>
+      <div class="chips" id="fCat"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="mas">
+      <p><b>¿Buscas algo que no ves aquí?</b> Manejo los catálogos completos de las tres marcas. Dime el producto o la página del catálogo y te lo encargo.</p>
+      <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/573146935675?text=Hola%20Efigenia%2C%20%C2%BFme%20env%C3%ADas%20el%20cat%C3%A1logo%20de%20esta%20campa%C3%B1a%3F">Pedir el catálogo</a>
+    </div>
+  </div>
+</section>
+
+<section class="real" style="background:#fff">
+  <div class="wrap reveal">
+    <div>
+      <h2 class="titulo">Mercancía en existencia</h2>
+      <p class="sub">Tengo producto disponible para entrega inmediata. Lo que no esté en existencia lo pido por catálogo y te aviso cuando llegue.</p>
+      <div class="ctas"><a class="btn btn-wa" href="#pedido">Preguntar disponibilidad</a></div>
+    </div>
+    <figure><img src="img/mesa.jpg" alt="Productos en existencia de Efigenia Martínez" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="pedido" id="pedido">
+  <div class="wrap reveal">
+    <h2 class="titulo">Arma tu pedido</h2>
+    <p class="sub">Llena estos datos y se abre WhatsApp con el mensaje listo para mí.</p>
+    <form class="form" id="form">
+      <div>
+        <label>Productos que te interesan</label>
+        <div class="lista" id="lista"></div>
+      </div>
+      <label>Otro producto, tono o página del catálogo
+        <textarea id="detalle" rows="3" placeholder="Ej: base tono medio, Avon página 34…"></textarea>
+      </label>
+      <label>Tu nombre
+        <input id="nombre" required placeholder="¿Cómo te llamas?">
+      </label>
+      <label>¿Cómo lo recibes?
+        <select id="entrega">
+          <option>Paso a recogerlo</option>
+          <option>Entrega a domicilio en Miranda</option>
+          <option>Envío a otro municipio</option>
+        </select>
+      </label>
+      <label>Barrio o dirección (si es domicilio)
+        <input id="dir" placeholder="Opcional">
+      </label>
+      <button class="btn btn-wa" type="submit">Enviar pedido por WhatsApp</button>
+      <p class="nota">Fotos de referencia tomadas de las páginas oficiales de cada marca. Presentaciones y disponibilidad pueden variar según la campaña.</p>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <h2 class="titulo">Así de fácil compras</h2>
+    <div class="pasos">
+      <div class="paso"><h3>Elige</h3><p>Mira los productos aquí o pídeme el catálogo de la campaña por WhatsApp.</p></div>
+      <div class="paso"><h3>Escríbeme</h3><p>Envía tu lista. Te confirmo precio y disponibilidad y te asesoro con tonos y fragancias.</p></div>
+      <div class="paso"><h3>Recibe</h3><p>Pasa a recogerlo o coordinamos la entrega.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" style="background:#fff">
+  <div class="wrap reveal" style="max-width:720px">
+    <h2 class="titulo">Dónde estoy</h2>
+    <div class="dato"><span class="i">📍</span><div><b>Calle 3 # 6-26</b>Barrio San Antonio, Miranda, Cauca<br><a href="https://www.google.com/maps/search/?api=1&query=Calle+3+%236-26+Barrio+San+Antonio+Miranda+Cauca" target="_blank" rel="noopener">Abrir en el mapa →</a></div></div>
+    <div class="dato"><span class="i">💬</span><div><b>WhatsApp</b><a href="https://wa.me/573146935675" target="_blank" rel="noopener">314 693 5675</a></div></div>
+    <div class="dato"><span class="i">📞</span><div><b>Llamar</b><a href="tel:+573146935675">314 693 5675</a></div></div>
+    <div class="ctas">
+      <button class="btn btn-rosa" id="compartir" type="button">Compartir esta app</button>
+      <button class="btn btn-claro" id="instalar" type="button" style="display:none">Instalar en el celular</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Efigenia Martínez</b> · Productos de Belleza · Miranda, Cauca</p>
+    <p style="margin-top:6px">¡Tu belleza, nuestra pasión!</p>
+    <p style="margin-top:14px;font-size:.75rem">Vendedora independiente. Natura, Avon y Yanbal son marcas de sus respectivos dueños; esta no es una página oficial de esas compañías.</p>
+    <p style="margin-top:6px;font-size:.75rem">Hecha con cariño por Vibras Positivas HM</p>
+  </div>
+</footer>
+
+<div class="visor" id="visor"><button class="cerrar" id="cerrar" aria-label="Cerrar">×</button><div class="caja" id="caja"></div></div>
+<a class="flota" href="#pedido">💬 Pedir <span class="n" id="cuenta">0</span></a>
+<div class="toast" id="toast"></div>
+
+<script>
+const WA='573146935675';
+const N='https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-co-storefront-catalog/default/';
+const NQ='?sw=500&q=85';
+const Y='https://www.yanbal.com/medias/';
+const A='https://cdn.jsdelivr.net/gh/pacificosas/magnolia@main/images/CO/Carrusel/';
+const P=[
+ // NATURA
+ {m:'Natura',c:'Perfumes',n:'Kaiak Océano femenino · Eau de toilette 100 ml',i:N+'dw73fe3c29/products/NATCOL-111179_1.jpg'+NQ},
+ {m:'Natura',c:'Perfumes',n:'Kaiak Aero femenino · Eau de toilette 100 ml',i:N+'dwcc5eb26b/products/NATCOL-111178_1.jpg'+NQ},
+ {m:'Natura',c:'Perfumes',n:'Humor Primeiro femenino · Eau de toilette 75 ml',i:N+'dw9060de30/products/NATCOL-64746_1.jpg'+NQ},
+ {m:'Natura',c:'Perfumes',n:'Luna Absoluta femenino · Eau de parfum',i:N+'dw7cf80da1/products/NATCOL-116582_1.jpg'+NQ},
+ {m:'Natura',c:'Perfumes',n:'Essencial Oud femenino · Eau de parfum 50 ml',i:N+'dw1f6d51cd/products/NATCOL-93623_1.jpg'+NQ},
+ {m:'Natura',c:'Para él',n:'Kaiak Océano masculino · Eau de toilette 100 ml',i:N+'dwc7fba052/products/NATCOL-111175_1.jpg'+NQ},
+ {m:'Natura',c:'Para él',n:'Kaiak Aventura masculino · Eau de toilette 100 ml',i:N+'dw3346ed0d/products/NATCOL-111173_1.jpg'+NQ},
+ {m:'Natura',c:'Para él',n:'Essencial Único masculino · Eau de parfum 90 ml',i:N+'dw3cbb9558/products/NATCOL-118463_1.jpg'+NQ},
+ {m:'Natura',c:'Para él',n:'Humor a Dois masculino · Eau de toilette 75 ml',i:N+'dw9df54236/products/NATCOL-64748_1.jpg'+NQ},
+ {m:'Natura',c:'Cuidado facial',n:'Agua micelar desmaquillante Chronos Derma 150 ml',i:N+'dwc0783ec9/products/NATCOL-133503_1.jpg'+NQ},
+ {m:'Natura',c:'Cuidado facial',n:'Gel crema antiseñales 45+ día Chronos Derma 40 g',i:N+'dw2305db6f/products/NATCOL-134725_1.jpg'+NQ},
+ {m:'Natura',c:'Cuidado facial',n:'Multiprotector antiseñales FPS 50 Chronos Derma 50 ml',i:N+'dw20f59f3b/products/NATCOL-134189_1.jpg'+NQ},
+ {m:'Natura',c:'Cuidado facial',n:'Protector solar facial aclarador FPS 50+ 50 ml',i:N+'dw28e99651/products/NATCOL-247114_1.jpg'+NQ},
+ {m:'Natura',c:'Cuidado facial',n:'Mousse de limpieza intensiva Chronos Derma 85 g',i:N+'dwcb3881c6/products/NATCOL-134586_1.jpg'+NQ},
+ // AVON
+ {m:'Avon',c:'Perfumes',n:'Far Away Glamour · 50 ml',i:A+'c202615-7.webp'},
+ {m:'Avon',c:'Perfumes',n:'Far Away Shine · 50 ml',i:A+'c202615-6.webp'},
+ {m:'Avon',c:'Perfumes',n:'Blossoming colonia con destellos · 120 ml',i:A+'c202615-4.webp'},
+ {m:'Avon',c:'Para él',n:'300 KM/H Boost · Eau de parfum 100 ml',i:A+'c202615-3.webp'},
+ {m:'Avon',c:'Para él',n:'Wild Country · Eau de cologne 100 ml',i:A+'c202615-2.webp'},
+ {m:'Avon',c:'Maquillaje',n:'Fresita brillo para labios · 10 g',i:A+'c202615-1.webp'},
+ // YANBAL
+ {m:'Yanbal',c:'Para él',n:'Zentro Privé · Eau de parfum',i:Y+'20014349-01.jpg?context=bWFzdGVyfGltYWdlc3w1ODgxOXxpbWFnZS9qcGVnfGFEYzNMMmhsWkM4eE5UUXpOemcyTXpBMU9UUTROaTh5TURBeE5ETTBPVjh3TVM1cWNHY3xkZWFiYTkxOGMxYTMwZGQ5YWQ0MGY4OTFjODVjZTMyODNiZjkyMGQ0OGMxM2I3MWVhNzk5ODY1ZTFhN2E2Zjcy'},
+ {m:'Yanbal',c:'Para él',n:'Set Dendur Destiny · Eau de parfum + desodorante',i:Y+'14700065-es-CO-01.jpg?context=bWFzdGVyfGltYWdlc3wxNTg1MzV8aW1hZ2UvanBlZ3xhRFUyTDJnM1l5OHhNVGN3TXpRME16VTFORE16TkM4eE5EY3dNREEyTlY5bGMxOURUMTh3TVM1cWNHY3w3MzE2ZmNiMTVkNTU1OWUzZjRlNTU3YWZkYThkYjUzMWJhNTNjYTZkZjI0ODU2YmU3Y2I1OGVkYTc4MDNiOTNm'},
+ {m:'Yanbal',c:'Perfumes',n:'Eau Vitale Rosa · Eau de cologne',i:Y+'20013950-01.jpg?context=bWFzdGVyfGltYWdlc3wyMjMwNzR8aW1hZ2UvanBlZ3xhR1l5TDJnd01TOHhNRFUxTXpBeU16RXpOVGMzTkM4eU1EQXhNemsxTUY4d01TNXFjR2N8OTVkNjAxMjA1YWQ5NTg0NjBhYzZhZWE2NDhkMTkxODQ5NGNkNjFhMjU5ZjBkNWNmYjg1ZjlkOWQ1NTk3M2Q2YQ'},
+ {m:'Yanbal',c:'Perfumes',n:'Mix & Chic Berry Tonic · Colonia',i:Y+'20013395-01.jpg?context=bWFzdGVyfGltYWdlc3wxMjczNDZ8aW1hZ2UvanBlZ3xhRGN3TDJnNU5DOHhNREkwTmpZeU5qRTBPRE00TWk4eU1EQXhNek01TlY4d01TNXFjR2N8NWE5OTBhNjgyOThkMTI4YWI4YmUyMzg5ZWFlYjRjODIzYzE0YTM3YTdkM2U1NmMwN2FhMjBkOTZhMGNiZmY0Ng'},
+ {m:'Yanbal',c:'Cuidado facial',n:'Elixir de Vida · prevención y corrección de arrugas',i:Y+'CO-ELIXIRDEVIDA-C08.jpg?context=bWFzdGVyfGltYWdlc3w0NjQwMnxpbWFnZS9qcGVnfGFEUTBMMmd6Tmk4eE1EUTJOVGsyTWpNeU9EQTVOQzlEVDE5RlRFbFlTVkpFUlZaSlJFRmZRekE0TG1wd1p3fDYxZWUzYzFlYzc4MWRlYjJhZmJkYTUxNDZiZGZlZGI1ZmFmYzM2OWRiNWM0MDM5MTI2ZTgzZWY4MDYxZGI4NWU',cover:1},
+ {m:'Yanbal',c:'Cuidado facial',n:'Aqua Fix · hidratación intensa',i:Y+'CO-AQUAFIX-C08.jpg?context=bWFzdGVyfGltYWdlc3w1Mzg5NHxpbWFnZS9qcGVnfGFEQTFMMmd6Tnk4eE1EUTJOVGsyTWpNNU16WXpNQzlEVDE5QlVWVkJSa2xZWDBNd09DNXFjR2N8NzA5YzU1ZjdiYWE2YjYyZmMzOWVkNDI2MWNmMmRkMTMxMzY0OGYwZDM3NjcyNWZiMjM4NWUxMTJjN2Y3MmUyMw',cover:1},
+ {m:'Yanbal',c:'Cuidado facial',n:'Extracto Divino · juventud de la piel',i:Y+'CO-EXTRACTODIVINO-C08.jpg?context=bWFzdGVyfGltYWdlc3w1Njg2NXxpbWFnZS9qcGVnfGFEQXpMMmd6WVM4eE1EUTJOVGsyTWpRMU9URTJOaTlEVDE5RldGUlNRVU5VVDBSSlZrbE9UMTlETURndWFuQm58MTM0MTYzN2QzMDBjYmQ1YjQzYmU4NDNmN2M0ODQ1OWE2Yzk5M2E3MDgyZDFjMmQ0NTBiODUwYzJhMzAzZjQ4NA',cover:1},
+ // Categorías generales
+ {m:'Avon',c:'Maquillaje',n:'Maquillaje Avon · labiales, bases y más',i:'https://www.avon.co/images/Categorias1.png',cover:1},
+ {m:'Avon',c:'Cuidado corporal',n:'Cuidado corporal Avon · cremas y lociones',i:'https://www.avon.co/images/Categorias4.png',cover:1},
+ {m:'Avon',c:'Cuidado capilar',n:'Cuidado del cabello Avon',i:'https://www.avon.co/images/Categorias5.png',cover:1},
+ {m:'Natura',c:'Cuidado capilar',n:'Lumina · cuidado del cabello Natura',i:'https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-NatColombia-Library/default/dw72b94f19/NE%20COLOMBIA/categorias/cabello/multiple_banner_column_lumina_DESK.jpg?sw=600&q=80',cover:1}
+];
+const RESPALDO='img/mesa.jpg';
+let marca='Todas',cat='Todo',pedido=[];
+try{pedido=JSON.parse(localStorage.getItem('pedidoEfigenia')||'[]')}catch(e){}
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const img=(p,extra='')=>`<img src="${esc(p.i)}" alt="${esc(p.n)}" loading="lazy" referrerpolicy="no-referrer" ${p.cover?'style="object-fit:cover;padding:0"':''} onerror="this.onerror=null;this.src='${RESPALDO}';this.style.objectFit='cover';this.style.padding='0'" ${extra}>`;
+function guardar(){try{localStorage.setItem('pedidoEfigenia',JSON.stringify(pedido))}catch(e){}}
+function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('show');clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove('show'),1800)}
+
+function vitrina(){
+  const sel=[0,14,20,5,22].map(i=>P[i]);
+  $('#vitrina').innerHTML=sel.map((p,k)=>`<div class="p p${k+1}">${img(p)}<span class="tag ${p.m}">${p.m}</span></div>`).join('');
+}
+function filtros(){
+  const ms=['Todas','Natura','Avon','Yanbal'];
+  const cs=['Todo',...new Set(P.filter(p=>marca==='Todas'||p.m===marca).map(p=>p.c))];
+  if(!cs.includes(cat))cat='Todo';
+  $('#fMarca').innerHTML=ms.map(m=>`<button class="chip m ${m===marca?'on':''}" data-m="${m}">${m==='Todas'?'Todas las marcas':m}</button>`).join('');
+  $('#fCat').innerHTML=cs.map(c=>`<button class="chip ${c===cat?'on':''}" data-c="${c}">${c}</button>`).join('');
+}
+function grid(){
+  const l=P.map((p,i)=>({...p,id:i})).filter(p=>(marca==='Todas'||p.m===marca)&&(cat==='Todo'||p.c===cat));
+  $('#grid').innerHTML=l.map(p=>{const ya=pedido.includes(p.n);
+    return `<article class="prod"><div class="foto" data-ver="${p.id}">${img(p)}<span class="tag ${p.m}">${p.m}</span></div>
+    <div class="info"><span class="cat">${p.c}</span><h3>${esc(p.n)}</h3><button class="add ${ya?'ok':''}" data-add="${p.id}">${ya?'✓ Agregado':'+ Agregar'}</button></div></article>`}).join('');
+}
+function lista(){
+  $('#lista').innerHTML=pedido.length?pedido.map((p,i)=>`<span>${esc(p)}<button type="button" data-del="${i}" aria-label="Quitar">×</button></span>`).join(''):'<span class="vacio">Aún no has agregado productos. Ve al catálogo o escribe abajo.</span>';
+  $('#cuenta').textContent=pedido.length;
+}
+function toggle(i){const n=P[i].n;
+  if(pedido.includes(n)){pedido=pedido.filter(x=>x!==n);toast('Quitado')}else{pedido.push(n);toast('Agregado a tu pedido')}
+  guardar();grid();lista();if($('#visor').classList.contains('on'))ver(i)}
+function ver(i){const p=P[i],ya=pedido.includes(p.n);
+  $('#caja').innerHTML=`${img(p)}<div class="t"><span class="tag ${p.m}" style="justify-self:start">${p.m} · ${p.c}</span><h3>${esc(p.n)}</h3>
+  <button class="add ${ya?'ok':''}" data-add="${i}">${ya?'✓ Agregado':'+ Agregar al pedido'}</button>
+  <a class="btn btn-wa" style="justify-content:center" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${encodeURIComponent('Hola Efigenia, ¿qué precio tiene '+p.m+' '+p.n+'?')}">Preguntar precio</a></div>`;
+  $('#visor').classList.add('on')}
+
+document.addEventListener('click',e=>{
+  let t;
+  if(t=e.target.closest('[data-m]')){marca=t.dataset.m;filtros();grid();return}
+  if(t=e.target.closest('[data-c]')){cat=t.dataset.c;filtros();grid();return}
+  if(t=e.target.closest('[data-ir]')){marca=t.dataset.ir;cat='Todo';filtros();grid();return}
+  if(t=e.target.closest('[data-add]')){toggle(+t.dataset.add);return}
+  if(t=e.target.closest('[data-ver]')){ver(+t.dataset.ver);return}
+  if(t=e.target.closest('[data-del]')){pedido.splice(+t.dataset.del,1);guardar();grid();lista();return}
+  if(e.target.id==='visor'||e.target.id==='cerrar')$('#visor').classList.remove('on');
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#visor').classList.remove('on')});
+
+$('#form').addEventListener('submit',e=>{
+  e.preventDefault();
+  let msg=`Hola Efigenia 🌸, soy ${$('#nombre').value.trim()}. Quiero hacer un pedido:\n`;
+  if(pedido.length) msg+=`\n• ${pedido.join('\n• ')}\n`;
+  const det=$('#detalle').value.trim(); if(det) msg+=`\nOtro: ${det}\n`;
+  msg+=`\nEntrega: ${$('#entrega').value}`;
+  const dir=$('#dir').value.trim(); if(dir) msg+=`\nDirección: ${dir}`;
+  msg+=`\n\n¿Me confirmas precios y disponibilidad? Gracias.`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,'_blank');
+});
+$('#compartir').addEventListener('click',async()=>{
+  const d={title:'Efigenia Martínez · Productos de Belleza',text:'Natura · Avon · Yanbal en Miranda, Cauca. Pide por WhatsApp:',url:location.href};
+  try{if(navigator.share)await navigator.share(d);else{await navigator.clipboard.writeText(location.href);toast('Enlace copiado')}}catch(e){}
+});
+let deferido;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferido=e;$('#instalar').style.display='inline-flex'});
+$('#instalar').addEventListener('click',()=>{if(!deferido)return;deferido.prompt();deferido=null;$('#instalar').style.display='none'});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js').catch(()=>{});
+vitrina();filtros();grid();lista();
+</script>
+</body>
+</html>
